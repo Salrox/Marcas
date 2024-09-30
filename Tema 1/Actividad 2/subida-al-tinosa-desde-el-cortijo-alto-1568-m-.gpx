@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Wikiloc - https://www.wikiloc.com" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Wikiloc - SUBIDA AL TIÑOSA DESDE EL CORTIJO ALTO 1568 m.</name>
+    <link href="https://www.wikiloc.com/hiking-trails/subida-al-tinosa-desde-el-cortijo-alto-1568-m-5547413">
+      <text>SUBIDA AL TIÑOSA DESDE EL CORTIJO ALTO 1568 m. on Wikiloc</text>
+    </link>
+    <time>2013-11-01T23:47:05Z</time>
+  </metadata>
+  <wpt lat="37.367587" lon="-4.266842">
+    <ele>939.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>Empezamos a andar</name>
+    <cmt>Empezamos a andar</cmt>
+    <desc>Empezamos a andar</desc>
+  </wpt>
+  <wpt lat="37.384748" lon="-4.241129">
+    <ele>1544.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>CIMA</name>
+    <cmt>CIMA</cmt>
+    <desc>CIMA</desc>
+  </wpt>
+  <wpt lat="37.367444" lon="-4.266818">
+    <ele>939.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>llegada</name>
+    <cmt>llegada</cmt>
+    <desc>llegada</desc>
+  </wpt>
+  <wpt lat="37.368638" lon="-4.265611">
+    <ele>925.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>cortijo alto</name>
+    <cmt>cortijo alto</cmt>
+    <desc>cortijo alto</desc>
+  </wpt>
+  <wpt lat="37.370595" lon="-4.264881">
+    <ele>957.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>Encina milenaria</name>
+    <cmt>Encina milenaria</cmt>
+    <desc>Encina milenaria</desc>
+  </wpt>
+  <wpt lat="37.377074" lon="-4.259731">
+    <ele>997.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>caserio cañatienda</name>
+    <cmt>caserio cañatienda</cmt>
+    <desc>caserio cañatienda</desc>
+  </wpt>
+  <wpt lat="37.375062" lon="-4.261759">
+    <ele>983.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>VISTAS DEL PEÑÓN MORRIÓN</name>
+    <cmt>VISTAS DEL PEÑÓN MORRIÓN</cmt>
+    <desc>VISTAS DEL PEÑÓN MORRIÓN</desc>
+  </wpt>
+  <wpt lat="37.380195" lon="-4.258154">
+    <ele>1070.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>subiendo hacia el collado</name>
+    <cmt>subiendo hacia el collado</cmt>
+    <desc>subiendo hacia el collado</desc>
+  </wpt>
+  <wpt lat="37.384270" lon="-4.255354">
+    <ele>1203.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>COLLADO</name>
+    <cmt>COLLADO</cmt>
+    <desc>COLLADO</desc>
+  </wpt>
+  <wpt lat="37.382957" lon="-4.252591">
+    <ele>1307.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>VISTAS HACIA EL PASO NATURAL</name>
+    <cmt>VISTAS HACIA EL PASO NATURAL</cmt>
+    <desc>VISTAS HACIA EL PASO NATURAL</desc>
+  </wpt>
+  <wpt lat="37.382335" lon="-4.251266">
+    <ele>1381.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>VISTAS DESDE EL PASO NATURAL</name>
+    <cmt>VISTAS DESDE EL PASO NATURAL</cmt>
+    <desc>VISTAS DESDE EL PASO NATURAL</desc>
+  </wpt>
+  <wpt lat="37.381921" lon="-4.248997">
+    <ele>1440.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>CUEVA</name>
+    <cmt>CUEVA</cmt>
+    <desc>CUEVA</desc>
+  </wpt>
+  <wpt lat="37.381320" lon="-4.248187">
+    <ele>1452.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>HACIA LA CIMA</name>
+    <cmt>HACIA LA CIMA</cmt>
+    <desc>HACIA LA CIMA</desc>
+  </wpt>
+  <wpt lat="37.381998" lon="-4.244647">
+    <ele>1463.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>ROCAS CON FORMAS</name>
+    <cmt>ROCAS CON FORMAS</cmt>
+    <desc>ROCAS CON FORMAS</desc>
+  </wpt>
+  <wpt lat="37.383545" lon="-4.242539">
+    <ele>1515.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>DE REGRESO ..</name>
+    <cmt>DE REGRESO ..</cmt>
+    <desc>DE REGRESO ..</desc>
+  </wpt>
+  <wpt lat="37.380672" lon="-4.251046">
+    <ele>1311.0</ele>
+    <time>2013-11-01T19:29:05.582Z</time>
+    <name>BAJANDO POR EL BARRANCO</name>
+    <cmt>BAJANDO POR EL BARRANCO</cmt>
+    <desc>BAJANDO POR EL BARRANCO</desc>
+  </wpt>
+  <trk>
+    <name>SUBIDA AL TIÑOSA DESDE EL CORTIJO ALTO 1568 m.</name>
+    <cmt></cmt>
+    <desc></desc>
+    <trkseg>
+      <trkpt lat="37.367459" lon="-4.266649">
+        <ele>934.044</ele>
+        <time>2013-11-01T20:29:05Z</time>
+      </trkpt>
+      <trkpt lat="37.367314" lon="-4.266241">
+        <ele>923.005</ele>
+        <time>2013-11-01T20:30:25Z</time>
+      </trkpt>
+      <trkpt lat="37.368193" lon="-4.266016">
+        <ele>929.015</ele>
+        <time>2013-11-01T20:31:05Z</time>
+      </trkpt>
+      <trkpt lat="37.368252" lon="-4.265780">
+        <ele>927.007</ele>
+        <time>2013-11-01T20:31:25Z</time>
+      </trkpt>
+      <trkpt lat="37.368721" lon="-4.265683">
+        <ele>925.079</ele>
+        <time>2013-11-01T20:31:45Z</time>
+      </trkpt>
+      <trkpt lat="37.369182" lon="-4.265919">
+        <ele>933.049</ele>
+        <time>2013-11-01T20:32:05Z</time>
+      </trkpt>
+      <trkpt lat="37.369437" lon="-4.265522">
+        <ele>934.088</ele>
+        <time>2013-11-01T20:33:05Z</time>
+      </trkpt>
+      <trkpt lat="37.369787" lon="-4.265308">
+        <ele>934.051</ele>
+        <time>2013-11-01T20:33:25Z</time>
+      </trkpt>
+      <trkpt lat="37.370520" lon="-4.265104">
+        <ele>957.028</ele>
+        <time>2013-11-01T20:33:45Z</time>
+      </trkpt>
+      <trkpt lat="37.371006" lon="-4.264396">
+        <ele>962.085</ele>
+        <time>2013-11-01T20:34:25Z</time>
+      </trkpt>
+      <trkpt lat="37.371339" lon="-4.264192">
+        <ele>963.037</ele>
+        <time>2013-11-01T20:34:45Z</time>
+      </trkpt>
+      <trkpt lat="37.372788" lon="-4.262550">
+        <ele>977.064</ele>
+        <time>2013-11-01T20:36:05Z</time>
+      </trkpt>
+      <trkpt lat="37.374766" lon="-4.261703">
+        <ele>979.006</ele>
+        <time>2013-11-01T20:37:25Z</time>
+      </trkpt>
+      <trkpt lat="37.375491" lon="-4.261553">
+        <ele>994.016</ele>
+        <time>2013-11-01T20:38:05Z</time>
+      </trkpt>
+      <trkpt lat="37.376668" lon="-4.260448">
+        <ele>999.007</ele>
+        <time>2013-11-01T20:39:05Z</time>
+      </trkpt>
+      <trkpt lat="37.376676" lon="-4.260061">
+        <ele>993.071</ele>
+        <time>2013-11-01T20:40:05Z</time>
+      </trkpt>
+      <trkpt lat="37.377307" lon="-4.259815">
+        <ele>1000.051</ele>
+        <time>2013-11-01T20:40:45Z</time>
+      </trkpt>
+      <trkpt lat="37.377965" lon="-4.259265">
+        <ele>1013.030</ele>
+        <time>2013-11-01T20:41:45Z</time>
+      </trkpt>
+      <trkpt lat="37.378285" lon="-4.259200">
+        <ele>1017.043</ele>
+        <time>2013-11-01T20:42:25Z</time>
+      </trkpt>
+      <trkpt lat="37.379069" lon="-4.258396">
+        <ele>1035.090</ele>
+        <time>2013-11-01T20:44:45Z</time>
+      </trkpt>
+      <trkpt lat="37.379798" lon="-4.258423">
+        <ele>1051.097</ele>
+        <time>2013-11-01T20:46:05Z</time>
+      </trkpt>
+      <trkpt lat="37.380885" lon="-4.257940">
+        <ele>1092.019</ele>
+        <time>2013-11-01T20:48:25Z</time>
+      </trkpt>
+      <trkpt lat="37.381312" lon="-4.257564">
+        <ele>1115.071</ele>
+        <time>2013-11-01T20:49:45Z</time>
+      </trkpt>
+      <trkpt lat="37.382028" lon="-4.257478">
+        <ele>1133.041</ele>
+        <time>2013-11-01T20:51:05Z</time>
+      </trkpt>
+      <trkpt lat="37.383089" lon="-4.256357">
+        <ele>1168.015</ele>
+        <time>2013-11-01T20:55:45Z</time>
+      </trkpt>
+      <trkpt lat="37.384202" lon="-4.255440">
+        <ele>1198.007</ele>
+        <time>2013-11-01T20:58:25Z</time>
+      </trkpt>
+      <trkpt lat="37.384060" lon="-4.254339">
+        <ele>1210.022</ele>
+        <time>2013-11-01T21:00:45Z</time>
+      </trkpt>
+      <trkpt lat="37.383853" lon="-4.254004">
+        <ele>1219.092</ele>
+        <time>2013-11-01T21:02:45Z</time>
+      </trkpt>
+      <trkpt lat="37.383727" lon="-4.253309">
+        <ele>1243.051</ele>
+        <time>2013-11-01T21:06:45Z</time>
+      </trkpt>
+      <trkpt lat="37.383465" lon="-4.253151">
+        <ele>1269.044</ele>
+        <time>2013-11-01T21:08:45Z</time>
+      </trkpt>
+      <trkpt lat="37.383439" lon="-4.252630">
+        <ele>1291.061</ele>
+        <time>2013-11-01T21:11:25Z</time>
+      </trkpt>
+      <trkpt lat="37.382702" lon="-4.252641">
+        <ele>1309.098</ele>
+        <time>2013-11-01T21:15:05Z</time>
+      </trkpt>
+      <trkpt lat="37.382489" lon="-4.252483">
+        <ele>1330.060</ele>
+        <time>2013-11-01T21:17:25Z</time>
+      </trkpt>
+      <trkpt lat="37.382389" lon="-4.251600">
+        <ele>1364.014</ele>
+        <time>2013-11-01T21:23:45Z</time>
+      </trkpt>
+      <trkpt lat="37.381790" lon="-4.249471">
+        <ele>1430.054</ele>
+        <time>2013-11-01T21:32:05Z</time>
+      </trkpt>
+      <trkpt lat="37.381769" lon="-4.249146">
+        <ele>1435.009</ele>
+        <time>2013-11-01T21:33:45Z</time>
+      </trkpt>
+      <trkpt lat="37.381913" lon="-4.249025">
+        <ele>1440.007</ele>
+        <time>2013-11-01T21:34:45Z</time>
+      </trkpt>
+      <trkpt lat="37.381534" lon="-4.249055">
+        <ele>1435.016</ele>
+        <time>2013-11-01T21:37:25Z</time>
+      </trkpt>
+      <trkpt lat="37.381133" lon="-4.248658">
+        <ele>1438.056</ele>
+        <time>2013-11-01T21:39:45Z</time>
+      </trkpt>
+      <trkpt lat="37.381116" lon="-4.248409">
+        <ele>1443.045</ele>
+        <time>2013-11-01T21:41:25Z</time>
+      </trkpt>
+      <trkpt lat="37.381489" lon="-4.246539">
+        <ele>1461.098</ele>
+        <time>2013-11-01T21:49:25Z</time>
+      </trkpt>
+      <trkpt lat="37.381368" lon="-4.245396">
+        <ele>1462.075</ele>
+        <time>2013-11-01T21:54:05Z</time>
+      </trkpt>
+      <trkpt lat="37.381541" lon="-4.244884">
+        <ele>1464.032</ele>
+        <time>2013-11-01T21:55:45Z</time>
+      </trkpt>
+      <trkpt lat="37.382078" lon="-4.244396">
+        <ele>1466.074</ele>
+        <time>2013-11-01T21:58:45Z</time>
+      </trkpt>
+      <trkpt lat="37.383154" lon="-4.242687">
+        <ele>1499.095</ele>
+        <time>2013-11-01T22:09:05Z</time>
+      </trkpt>
+      <trkpt lat="37.383795" lon="-4.242164">
+        <ele>1525.049</ele>
+        <time>2013-11-01T22:13:45Z</time>
+      </trkpt>
+      <trkpt lat="37.384141" lon="-4.242076">
+        <ele>1533.023</ele>
+        <time>2013-11-01T22:15:05Z</time>
+      </trkpt>
+      <trkpt lat="37.384731" lon="-4.241142">
+        <ele>1544.007</ele>
+        <time>2013-11-01T22:21:25Z</time>
+      </trkpt>
+      <trkpt lat="37.384062" lon="-4.242113">
+        <ele>1529.054</ele>
+        <time>2013-11-01T22:26:25Z</time>
+      </trkpt>
+      <trkpt lat="37.383783" lon="-4.242170">
+        <ele>1525.024</ele>
+        <time>2013-11-01T22:28:05Z</time>
+      </trkpt>
+      <trkpt lat="37.383203" lon="-4.242634">
+        <ele>1509.043</ele>
+        <time>2013-11-01T22:31:45Z</time>
+      </trkpt>
+      <trkpt lat="37.381404" lon="-4.245214">
+        <ele>1462.016</ele>
+        <time>2013-11-01T22:43:25Z</time>
+      </trkpt>
+      <trkpt lat="37.381485" lon="-4.246539">
+        <ele>1461.043</ele>
+        <time>2013-11-01T22:50:25Z</time>
+      </trkpt>
+      <trkpt lat="37.381142" lon="-4.248658">
+        <ele>1438.060</ele>
+        <time>2013-11-01T23:01:05Z</time>
+      </trkpt>
+      <trkpt lat="37.381711" lon="-4.249192">
+        <ele>1435.012</ele>
+        <time>2013-11-01T23:03:25Z</time>
+      </trkpt>
+      <trkpt lat="37.380888" lon="-4.249921">
+        <ele>1383.046</ele>
+        <time>2013-11-01T23:09:05Z</time>
+      </trkpt>
+      <trkpt lat="37.380722" lon="-4.250922">
+        <ele>1340.088</ele>
+        <time>2013-11-01T23:12:25Z</time>
+      </trkpt>
+      <trkpt lat="37.380253" lon="-4.252110">
+        <ele>1248.016</ele>
+        <time>2013-11-01T23:19:05Z</time>
+      </trkpt>
+      <trkpt lat="37.379347" lon="-4.252697">
+        <ele>1204.007</ele>
+        <time>2013-11-01T23:23:05Z</time>
+      </trkpt>
+      <trkpt lat="37.378936" lon="-4.253345">
+        <ele>1171.099</ele>
+        <time>2013-11-01T23:24:45Z</time>
+      </trkpt>
+      <trkpt lat="37.378722" lon="-4.255190">
+        <ele>1117.029</ele>
+        <time>2013-11-01T23:26:45Z</time>
+      </trkpt>
+      <trkpt lat="37.378560" lon="-4.255512">
+        <ele>1108.048</ele>
+        <time>2013-11-01T23:27:05Z</time>
+      </trkpt>
+      <trkpt lat="37.378074" lon="-4.255802">
+        <ele>1089.011</ele>
+        <time>2013-11-01T23:27:45Z</time>
+      </trkpt>
+      <trkpt lat="37.377401" lon="-4.256768">
+        <ele>1055.078</ele>
+        <time>2013-11-01T23:29:05Z</time>
+      </trkpt>
+      <trkpt lat="37.377103" lon="-4.258452">
+        <ele>1016.095</ele>
+        <time>2013-11-01T23:30:25Z</time>
+      </trkpt>
+      <trkpt lat="37.377060" lon="-4.259546">
+        <ele>998.027</ele>
+        <time>2013-11-01T23:31:45Z</time>
+      </trkpt>
+      <trkpt lat="37.376651" lon="-4.260179">
+        <ele>995.097</ele>
+        <time>2013-11-01T23:33:05Z</time>
+      </trkpt>
+      <trkpt lat="37.376659" lon="-4.260437">
+        <ele>999.023</ele>
+        <time>2013-11-01T23:33:25Z</time>
+      </trkpt>
+      <trkpt lat="37.375329" lon="-4.261606">
+        <ele>988.025</ele>
+        <time>2013-11-01T23:34:25Z</time>
+      </trkpt>
+      <trkpt lat="37.374562" lon="-4.261746">
+        <ele>976.007</ele>
+        <time>2013-11-01T23:35:25Z</time>
+      </trkpt>
+      <trkpt lat="37.372807" lon="-4.262553">
+        <ele>977.054</ele>
+        <time>2013-11-01T23:36:05Z</time>
+      </trkpt>
+      <trkpt lat="37.371601" lon="-4.263916">
+        <ele>965.034</ele>
+        <time>2013-11-01T23:38:05Z</time>
+      </trkpt>
+      <trkpt lat="37.371285" lon="-4.264044">
+        <ele>963.073</ele>
+        <time>2013-11-01T23:38:45Z</time>
+      </trkpt>
+      <trkpt lat="37.370565" lon="-4.265026">
+        <ele>957.036</ele>
+        <time>2013-11-01T23:40:05Z</time>
+      </trkpt>
+      <trkpt lat="37.369623" lon="-4.265353">
+        <ele>937.073</ele>
+        <time>2013-11-01T23:41:05Z</time>
+      </trkpt>
+      <trkpt lat="37.369256" lon="-4.265906">
+        <ele>933.050</ele>
+        <time>2013-11-01T23:42:25Z</time>
+      </trkpt>
+      <trkpt lat="37.368518" lon="-4.265686">
+        <ele>925.082</ele>
+        <time>2013-11-01T23:43:25Z</time>
+      </trkpt>
+      <trkpt lat="37.368139" lon="-4.266029">
+        <ele>929.084</ele>
+        <time>2013-11-01T23:44:25Z</time>
+      </trkpt>
+      <trkpt lat="37.367320" lon="-4.266217">
+        <ele>923.007</ele>
+        <time>2013-11-01T23:45:25Z</time>
+      </trkpt>
+      <trkpt lat="37.367516" lon="-4.266780">
+        <ele>934.017</ele>
+        <time>2013-11-01T23:47:05Z</time>
+      </trkpt>
+    </trkseg>
+  </trk></gpx>
