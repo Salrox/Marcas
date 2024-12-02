@@ -1,0 +1,12 @@
+body{
+    background: #898888;
+}
+
+fieldset{
+    width: 400px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
