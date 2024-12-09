@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 10 Actividad 6 | Saúl Ruiz Plaza</title>
+
+    <style>
+        body{
+            background-color: green;
+        }
+.transicion a
+{
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+.transicion a:before
+{
+    position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+.transicion a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+    
+    </style>
+
+</head>
+<body>
+    <div class="transicion">
+        <a href="#">Inicio</a>
+        <a href="#">Artículos</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Contacto</a>
+
+    </div>
+</body>
+</html>

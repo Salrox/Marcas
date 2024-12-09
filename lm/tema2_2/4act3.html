@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 4 Actividad 3 | Saúl Ruiz Plaza</title>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .contenedor {
+        display: flex;
+    }
+
+    #primero, #segundo {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 1px solid #ccc;
+    }
+
+    #primero {
+        background-image: 
+            url(https://th.bing.com/th/id/OIP.XvK8IBuNOaHNXN49G-EUQwHaEo?rs=1&pid=ImgDetMain),
+            linear-gradient(to bottom, rgba(255, 200, 0, 0), rgba(255, 0, 150, 0));
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #segundo {
+        background-image: 
+            url(https://th.bing.com/th/id/OIP.XvK8IBuNOaHNXN49G-EUQwHaEo?rs=1&pid=ImgDetMain),
+            linear-gradient(to bottom, rgba(255, 200, 0, 0.5), rgba(255, 0, 150, 0.5));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+</style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="primero">
+            <p>Not Blended</p>
+        </div>
+        <div id="segundo">
+            <p>Blended</p>
+        </div>
+    </div>
+
+    <a href="index.html">Volver</a>
+</body>
+</html>
