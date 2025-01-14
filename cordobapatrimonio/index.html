@@ -23,21 +23,23 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Córdoba Ciudad Patrimonio</title>
 </head>
 
 <!--Cuerpo-->
 <body>
     <header>
+        <div class="logo">
         <img class="transicion" id="logo" src="./img/logosinfondo.png" alt="Córdoba Patrimonio">
-        <h1 class="transicion" title="Esto es un encabezado">Córdoba Ciudad Patrimonio</h1>
+        </div>
+        <h1 class="transicion" >Córdoba Ciudad Patrimonio</h1>
     </header>
 
     <nav>
         <a href="index.html" > Inicio</a> | 
         <a href="mezquita.html" >La Mezquita </a> | 
-        <a href="casco_historico.html"> Casco Histórico</a>|  
+        <a href="casco_historico.html"> Casco Histórico</a> |  
         <a href="los_patios.html"> Los Patios </a>| 
         <a href="medina_azahara.html"> Medina Azahara </a>| 
         <a href="recorrido.html"> Recorrido Histórico</a> | 
@@ -46,7 +48,7 @@
 
     <main>
         <section>
-            <article>
+            <article id="visita">
                 <h2>¡Visita Córdoba!</h2>
 
                 <p>Córdoba, una ciudad que <b>combina historia, cultura y tradición</b>, es el destino ideal para aquellos que buscan sumergirse en una de las ciudades más fascinantes de España. Situada en el corazón de <b>Andalucía</b>, Córdoba tiene una rica herencia que la convierte en un lugar único, donde las huellas de diferentes civilizaciones han dejado su marca a lo largo de los siglos.</p>
@@ -72,8 +74,10 @@
                 <p><b>¡No esperes más! Ven a conocer Córdoba, una ciudad que te conquistará desde el primer momento!</b></p>
 
                 <br>
+                <div class="videopre">
 <iframe src="https://www.youtube.com/embed/AGg6loHvirY" frameborder="0" alt="¡Descubre Córdoba!" width="500" height="300" allowfullscreen></iframe>
-                </article>
+                </div>   
+            </article>
             <article>
             <h2> Contenido Noticia 2 </h2>
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies dictum consequat. Vestibulum sodales est ac mauris commodo blandit. Fusce mollis ex sit amet mi gravida, ac suscipit orci vulputate. Vestibulum eget luctus nibh. Pellentesque pretium leo in sem venenatis scelerisque. Aenean nec ex eget dui faucibus malesuada. Vivamus congue iaculis nibh, vel facilisis enim interdum non. Integer non dui dolor. In tristique, erat sed tristique feugiat, magna orci rhoncus urna, sit amet sodales nulla massa et leo. Mauris ultrices odio nec dui molestie cursus a a tellus. Nunc vitae risus sed augue ornare volutpat ut sit amet enim. Donec at scelerisque mi. Quisque sollicitudin libero ac metus malesuada, quis commodo augue mattis. Aliquam pellentesque diam nibh, volutpat blandit sem fringilla at. Mauris finibus, nisi ac blandit aliquet, nisi orci luctus sem, sed iaculis sapien mi sed enim.</p>
@@ -91,15 +95,30 @@
 <p>Donec laoreet massa ac ornare ultrices. Ut quis justo imperdiet, iaculis libero sit amet, blandit sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac sapien mollis, aliquam nisl quis, auctor augue. Integer blandit hendrerit rhoncus. Nam aliquam maximus risus. Aenean ipsum arcu, accumsan in odio sit amet, facilisis facilisis quam. Donec venenatis felis in dolor molestie hendrerit. Proin orci neque, aliquet sit amet scelerisque ut, posuere sed nulla. Curabitur at mi sit amet elit finibus pulvinar. Nam mollis tempus mauris non pellentesque. Quisque eget neque ultrices, ornare ligula vel, sagittis erat. Nullam felis quam, pharetra ac tristique ac, porta sit amet tortor. Nulla vel tellus quis erat ullamcorper gravida non nec ante. Pellentesque sodales libero vel auctor mattis. In non enim eget sapien molestie rutrum. </p>
             </article>
         </section>
-        <a href="#top"><img src="../images/top.png" alt="Inicio de página" width="48"></a>
+        
+        
+        <div class="asides">
         <aside> 
 <h3> Enlace de Interés</h3>
 <a href="http://www.turismodecordoba.org" target="_blank"> Turismo Córdoba</a>
 
 <h3> Descargas</h3>
 <a href="documentos/plano.pdf" download="Plano"> Mapa de la ciudad</a>
-        </aside>
+        
+<a href="#top"><img src="/cordobapatrimonio/img/arrow.png" alt="Inicio de página" width="48" id="top"></a>
+</aside>
 
+
+        <aside id="Eventos">
+
+            <h3>Eventos en Córdoba</h3>
+            <ul>
+                <li>Fiesta de los Patios: 5 - 18 Mayo</li>
+                <li>Flora: 14-25 Octubre</li>
+
+            </ul>
+        </aside>
+    </div>
     </main>
     <footer> 
         <address> Córdoba, España</address>

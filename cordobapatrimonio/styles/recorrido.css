@@ -3,6 +3,8 @@ body{
     background-color: #003049;
     padding: 0px;
     margin: 0px;
+
+
 }
 
 
@@ -19,27 +21,18 @@ h1{
 }
 
 .logo{
-    background-color: #003049;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 #logo {
     width: 300px;
-
     transition: transform 0.5s ease, opacity 0.5s ease;
-    box-shadow: 0px 10px 128px #022030;
-    border-radius: 50% ;
-
 
 }
 #logo:hover {
     transform: scale(1.2); 
-    opacity: 0.9;
-
 }
 nav{
     background-color: #ae1a2f ;
@@ -78,14 +71,11 @@ main{
 main img{
     aspect-ratio: 16/9;
 }
-
-.videopre{
-    width: 500px;
-    height: 300px;
-    border: 4px solid #003049;
-    border-radius: 5px;
+main a{
+    text-decoration: none;
+    color: #003049;
+    font-weight: bold;
 }
-
 
 aside {
     background-color: #669BBC; 
@@ -105,7 +95,7 @@ aside:hover{
 
 
 
-aside h3 {
+aside h2 {
     color: black; 
     font-size: 1.3em;
     margin-bottom: 15px;
@@ -123,7 +113,7 @@ aside a {
 }
 
 aside a:hover {
-    color: #b04a4a; 
+    color: #022030; 
     text-decoration: underline;
 }
 
@@ -143,27 +133,18 @@ aside ul li {
 
 aside img {
     float: right;
-    padding: 10px; 
+    padding: 0px; 
     width: 50px; 
     height: 50px;
-    translate: 10px 20px;
+    translate: 0 -10px;
 }
-
-.asides{
-    gap: 5px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #f6f6f6;
-    overflow: hidden;
-}
-
-
 
 footer{
     background-color: #003049;
     color: #669BBC;
     padding: 20px; 
     border-top: 2px solid  #022030; 
+    margin: 0;
     text-align: center;
     font-size: 0.9em;
     letter-spacing: 0.5px; 
