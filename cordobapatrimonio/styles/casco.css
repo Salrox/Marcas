@@ -51,6 +51,8 @@ nav{
     margin: 0px;
     text-align: center;
     color: white;
+    position: sticky;
+    top: 0;
 
 
 }
