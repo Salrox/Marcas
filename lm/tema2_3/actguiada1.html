@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Guiada 1</title>
+
+    <style>
+        body{
+            width: 500px;
+            margin: 0;
+        }
+        p{
+            background-color: aqua;
+            border: solid 3px blue;
+            margin: 10px;
+            padding: 10px;
+        }
+        span{
+            background-color: red;
+            border: solid 1px black;
+        }
+        .positioned{
+            background-color: yellow;
+            position: relative;
+            translate: 30px 30px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamiento</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at nam reprehenderit, iusto ducimus excepturi quaerat nostrum cumque a ipsa asperiores eum, numquam beatae quia maiores? Inventore consectetur necessitatibus amet?7</p>
+
+    <p class="positioned"> By default we span 100% of the width of our parent element, and we are as tall as our chil content. Our total width and height is our content + padding + border width/height.</p>
+
+    <p>We are separated by our margins.
+        Because of margin collapsing,
+        we are separated by the width of one of our margins, not both
+    </p>
+
+    <p>
+        Inline elements <span>like this one</span> and <span>this one</span> sit on the sasme line as one another, and adjacent text nodes, if there is space on the same line. Overflowing inline <span>wrap onto a new line if posible -  elements like this one containing text </span>, or just go on to a new line if not, much like this image will do:
+        <img src="perro.JPG" alt="">
+    </p>
+
+    <a href="index.html">Volver</a>
+</body>
+</html>

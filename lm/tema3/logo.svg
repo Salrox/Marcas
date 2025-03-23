@@ -1,0 +1,11 @@
+<svg version="1.1"
+    baseProfile="full"
+    width="1000" height="700"
+    xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="110" cy="60" rx="40" ry="50" fill="#219EBC" stroke="#023047" stroke-width="2" />
+<ellipse cx="195" cy="141" rx="40" ry="50" fill="#219EBC" stroke="#023047" stroke-width="2" />
+<ellipse cx="105" cy="140" rx="40" ry="50" fill="#219EBC" stroke="#023047" stroke-width="2" />
+<ellipse  cx="195" cy="60" rx="40" ry="50" fill="#219EBC" stroke="#023047" stroke-width="2" />
+<circle stroke="#023047" stroke-width="2" cx="150" cy="100" r="70" fill="#219ebc"/>
+<text x="150" y="120" font-size="60" text-anchor="middle" fill="219EBC" font-family="Arial"> LM </text>
+</svg>

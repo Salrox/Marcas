@@ -1,0 +1,631 @@
+// Ejercicio 1
+::¿Qué error presenta el siguiente fragmento XML respecto a su DTD?::
+```xml
+<!DOCTYPE entrenamiento [
+<!ELEMENT entrenamiento (ejercicio+)>
+<!ELEMENT ejercicio (nombre, series, peso)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT series (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ATTLIST ejercicio nivel (principiante|intermedio|avanzado) #REQUIRED>
+]>
+<entrenamiento>
+    <ejercicio>
+        <nombre>Sentadillas</nombre>
+        <series>4</series>
+        <peso>70kg</peso>
+    </ejercicio>
+</entrenamiento>
+```
+{
+~%-25%El elemento "peso" no debería permitir texto
+~%-25%El elemento "entrenamiento" no está correctamente definido
+~%-25%No se permiten valores numéricos en el elemento "series"
+=%100%Falta el atributo "nivel" en el elemento ejercicio
+}
+
+// Ejercicio 2
+::En el siguiente esquema XSD para un plan nutricional, ¿qué restringe correctamente el elemento "calorias" a valores entre 1000 y 5000?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="planNutricional">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="calorias">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <!-- OPCIONES AQUÍ -->
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+=%100%`<xs:minInclusive value="1000"/><xs:maxInclusive value="5000"/>`
+~%-25%`<xs:minValue value="1000"/><xs:maxValue value="5000"/>`
+~%-25%`<xs:minLength value="1000"/><xs:maxLength value="5000"/>`
+~%-25%`<xs:lowerBound value="1000"/><xs:upperBound value="5000"/>`
+}
+
+// Ejercicio 3
+::¿Cuál es el problema en el siguiente XML según la DTD definida?::
+```xml
+<!DOCTYPE usuario [
+<!ELEMENT usuario (nombre, edad, altura, peso, objetivo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT altura (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT objetivo (#PCDATA)>
+<!ATTLIST usuario id ID #REQUIRED>
+<!ATTLIST usuario nivel (principiante|intermedio|avanzado) #REQUIRED>
+]>
+<usuario id="U001" nivel="experto">
+    <nombre>Carlos Martínez</nombre>
+    <edad>34</edad>
+    <altura>178</altura>
+    <peso>75</peso>
+    <objetivo>Ganancia muscular</objetivo>
+</usuario>
+```
+{
+~%-25%El elemento "objetivo" está mal definido
+=%100%El valor "experto" no es válido para el atributo "nivel"
+~%-25%Falta el atributo "id" en el elemento "usuario"
+~%-25%El DTD no permite elementos como "altura" y "peso"
+}
+
+// Ejercicio 4
+::En el siguiente esquema XSD para un registro de actividades físicas, ¿qué declaración define correctamente el elemento "duracion" como un tiempo en formato "HH:MM:SS"?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actividad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tipo" type="xs:string"/>
+        <xs:element name="duracion">
+          <!-- OPCIONES AQUÍ -->
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+=%100%`<xs:simpleType><xs:restriction base="xs:string"><xs:pattern value="[0-9]{2}:[0-9]{2}:[0-9]{2}"/></xs:restriction></xs:simpleType>`
+~%-25%`<xs:simpleType><xs:restriction base="xs:time"/></xs:simpleType>`
+~%-25%`<xs:simpleType><xs:format type="time" pattern="HH:MM:SS"/></xs:simpleType>`
+~%-25%`<xs:simpleType><xs:restriction base="xs:duration"/></xs:simpleType>`
+}
+
+// Ejercicio 5
+::¿Qué define correctamente la siguiente DTD para un programa de fitness?::
+```xml
+<!DOCTYPE programa [
+<!ELEMENT programa (dia+)>
+<!ELEMENT dia (nombre, ejercicios)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ejercicios (ejercicio*)>
+<!ELEMENT ejercicio (nombre, series, repeticiones)>
+<!ELEMENT series (#PCDATA)>
+<!ELEMENT repeticiones (#PCDATA)>
+<!ATTLIST dia numero CDATA #REQUIRED>
+]>
+```
+{
+~%-25%Un programa debe contener exactamente un día de ejercicios
+~%-25%Cada día puede contener cero o más ejercicios
+=%100%El elemento "programa" puede contener varios elementos "dia"
+~%-25%Un "ejercicio" no puede tener un elemento "nombre"
+}
+
+// Ejercicio 6
+::En el siguiente XML con su esquema XSD, ¿qué restricción está mal aplicada?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="suplemento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="dosis" type="xs:string"/>
+        <xs:element name="frecuencia">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="diaria"/>
+              <xs:enumeration value="semanal"/>
+              <xs:enumeration value="mensual"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<suplemento>
+  <nombre>Proteína Whey</nombre>
+  <dosis>30g</dosis>
+  <frecuencia>2veces</frecuencia>
+</suplemento>
+```
+{
+~%-25%El elemento "nombre" debería ser un tipo complejo
+=%100%El valor "2veces" no es válido para el elemento "frecuencia"
+~%-25%Falta un atributo obligatorio en el elemento "suplemento"
+~%-25%El elemento "dosis" está mal definido
+}
+
+// Ejercicio 7
+::¿Cuál es el error en la siguiente definición DTD para un registro de medidas corporales?::
+```xml
+<!DOCTYPE registroMedidas [
+<!ELEMENT registroMedidas (persona+)>
+<!ELEMENT persona (nombre, medidas+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT medidas (fecha, peso, cintura, pecho)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT cintura (#PCDATA)>
+<!ELEMENT pecho (#PCDATA)>
+<!ATTLIST persona id ID #REQUIRED>
+<!ATTLIST medidas id ID #REQUIRED>
+]>
+```
+{
+=%100%No se pueden tener dos atributos con ID en la misma DTD
+~%-25%El elemento "persona" no puede contener múltiples elementos "medidas"
+~%-25%Falta definir el tipo de datos para los elementos numéricos
+~%-25%No se pueden tener dos elementos con el mismo nombre de atributo "id"
+}
+
+// Ejercicio 8
+::En el siguiente esquema XSD para un plan de entrenamiento, ¿qué opción define correctamente un elemento opcional "calentamiento"?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="entrenamiento">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- OPCIONES AQUÍ para elemento calentamiento -->
+        <xs:element name="ejercicioPrincipal" type="xs:string"/>
+        <xs:element name="enfriamiento" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:element name="calentamiento" type="xs:string" xs:optional="true"/>`
+=%100%`<xs:element name="calentamiento" type="xs:string" minOccurs="0"/>`
+~%-25%`<xs:element name="calentamiento" type="xs:string" required="false"/>`
+~%-25%`<xs:element name="calentamiento" type="xs:string" xs:minOccurs="0" xs:maxOccurs="1"/>`
+}
+
+// Ejercicio 9
+::¿Qué error presenta el siguiente XML respecto a su DTD para una clase de gimnasio?::
+```xml
+<!DOCTYPE claseGimnasio [
+<!ELEMENT claseGimnasio (nombre, duracion, instructor, participantes)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT instructor (#PCDATA)>
+<!ELEMENT participantes (participante+)>
+<!ELEMENT participante (nombre, nivel)>
+<!ELEMENT nivel (#PCDATA)>
+<!ATTLIST claseGimnasio tipo (yoga|pilates|zumba|hiit) #REQUIRED>
+]>
+<claseGimnasio tipo="spinning">
+    <nombre>Spinning intenso</nombre>
+    <duracion>45min</duracion>
+    <instructor>Ana Gómez</instructor>
+    <participantes>
+        <participante>
+            <nombre>Juan Pérez</nombre>
+            <nivel>avanzado</nivel>
+        </participante>
+    </participantes>
+</claseGimnasio>
+```
+{
+~%-25%El elemento "participante" requiere más subelementos
+=%100%El valor "spinning" no es válido para el atributo "tipo"
+~%-25%El elemento "duracion" no está correctamente formateado
+~%-25%Falta un elemento obligatorio en "claseGimnasio"
+}
+
+// Ejercicio 10
+::En el siguiente esquema XSD para un perfil de usuario de gimnasio, ¿qué restricción limita correctamente el elemento "email" a un formato válido de correo electrónico?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="usuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="email">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <!-- OPCIONES AQUÍ -->
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+=%100%`<xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>`
+~%-25%`<xs:format type="email"/>`
+~%-25%`<xs:datatype value="email"/>`
+~%-25%`<xs:email-format value="true"/>`
+}
+
+// Ejercicio 11
+::¿Qué error existe en la siguiente DTD para un registro de competiciones de fitness?::
+```xml
+<!DOCTYPE competicion [
+<!ELEMENT competicion (nombre, fecha, categorias)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT categorias (categoria*)>
+<!ELEMENT categoria (nombre, participantes)>
+<!ELEMENT participantes (participante+)>
+<!ELEMENT participante (nombre, puntuacion)>
+<!ELEMENT puntuacion (#PCDATA)>
+]>
+```
+{
+=%100%Se está utilizando el mismo nombre de elemento "nombre" en diferentes contextos
+~%-25%El elemento "categorias" no puede contener múltiples elementos "categoria"
+~%-25%Falta definir atributos obligatorios para el elemento "competicion"
+~%-25%El elemento "puntuacion" debe ser de tipo numérico
+}
+
+// Ejercicio 12
+::En el siguiente esquema XSD para un seguimiento de progreso fitness, ¿qué opción define correctamente el tipo de datos para el elemento "fecha"?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="seguimiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="usuario" type="xs:string"/>
+        <xs:element name="fecha">
+          <!-- OPCIONES AQUÍ -->
+        </xs:element>
+        <xs:element name="peso" type="xs:decimal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:complexType><xs:sequence><xs:element name="dia" type="xs:integer"/></xs:sequence></xs:complexType>`
+=%100%`<xs:simpleType><xs:restriction base="xs:date"/></xs:simpleType>`
+~%-25%`<xs:simpleType><xs:restriction base="xs:string"><xs:pattern value="\d{2}/\d{2}/\d{4}"/></xs:restriction></xs:simpleType>`
+~%-25%`<xs:attribute type="xs:date"/>`
+}
+
+// Ejercicio 13
+::¿Qué error presenta el siguiente XML con su DTD para una rutina de cardio?::
+```xml
+<!DOCTYPE rutina [
+<!ELEMENT rutina (ejercicio+)>
+<!ELEMENT ejercicio (nombre, intensidad?, duracion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT intensidad (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ATTLIST ejercicio tipo CDATA #REQUIRED>
+]>
+<rutina>
+    <ejercicio>
+        <nombre>Correr en cinta</nombre>
+        <duracion>30min</duracion>
+    </ejercicio>
+</rutina>
+```
+{
+~%-25%El elemento "intensidad" debería ser obligatorio
+=%100%Falta el atributo "tipo" en el elemento "ejercicio"
+~%-25%El elemento "duracion" está mal formateado
+~%-25%No se permite tener más de un ejercicio en una rutina
+}
+
+// Ejercicio 14
+::En el siguiente esquema XSD para un programa de nutrición, ¿qué opción define correctamente un atributo "id" obligatorio para el elemento "comida"?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="planAlimentacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="comida" maxOccurs="5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="calorias" type="xs:integer"/>
+            </xs:sequence>
+            <!-- OPCIONES AQUÍ -->
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:attribute name="id" type="xs:ID" required="true"/>`
+~%-25%`<xs:attribute name="id" type="xs:string" use="required"/>`
+=%100%`<xs:attribute name="id" type="xs:ID" use="required"/>`
+~%-25%`<xs:attribute name="id" type="xs:ID" minOccurs="1"/>`
+}
+
+// Ejercicio 15
+::¿Cuál es el problema en el siguiente XML según su DTD para un historial de entrenamiento?::
+```xml
+<!DOCTYPE historial [
+<!ELEMENT historial (sesion+)>
+<!ELEMENT sesion (fecha, duracion, calorias, tipoEntrenamiento+)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ELEMENT tipoEntrenamiento (#PCDATA)>
+<!ATTLIST tipoEntrenamiento intensidad (baja|media|alta) #REQUIRED>
+]>
+<historial>
+    <sesion>
+        <fecha>2023-09-15</fecha>
+        <duracion>75min</duracion>
+        <calorias>450</calorias>
+        <tipoEntrenamiento>Entrenamiento de fuerza</tipoEntrenamiento>
+    </sesion>
+</historial>
+```
+{
+~%-25%El elemento "sesion" debe contener más de un "tipoEntrenamiento"
+=%100%Falta el atributo "intensidad" en el elemento "tipoEntrenamiento"
+~%-25%El elemento "calorias" debe ser de tipo numérico
+~%-25%El formato de fecha es incorrecto
+}
+
+// Ejercicio 16
+::En el siguiente esquema XSD para un plan de hidratación, ¿qué opción define correctamente un tipo simple para limitar los valores del elemento "cantidad" entre 100 y 2000 ml?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="hidratacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="bebida" type="xs:string"/>
+        <xs:element name="cantidad">
+          <!-- OPCIONES AQUÍ -->
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:simpleType><xs:restriction base="xs:positiveInteger"><xs:minValue value="100"/><xs:maxValue value="2000"/></xs:restriction></xs:simpleType>`
+~%-25%`<xs:simpleType><xs:integer min="100" max="2000"/></xs:simpleType>`
+=%100%`<xs:simpleType><xs:restriction base="xs:integer"><xs:minInclusive value="100"/><xs:maxInclusive value="2000"/></xs:restriction></xs:simpleType>`
+~%-25%`<xs:integer><xs:min value="100"/><xs:max value="2000"/></xs:integer>`
+}
+
+// Ejercicio 17
+::¿Qué error existe en la siguiente DTD para un programa de estiramientos?::
+```xml
+<!DOCTYPE programa [
+<!ELEMENT programa (estiramiento*)>
+<!ELEMENT estiramiento (nombre, musculo, duracion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT musculo (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ATTLIST estiramiento dificultad (facil | medio | dificil) #IMPLIED>
+<!ATTLIST estiramiento id ID #REQUIRED>
+]>
+<programa>
+    <estiramiento id="e1" dificil="dificil">
+        <nombre>Estiramiento de isquiotibiales</nombre>
+        <musculo>Isquiotibiales</musculo>
+        <duracion>30seg</duracion>
+    </estiramiento>
+</programa>
+```
+{
+~%-25%El atributo "dificultad" debería ser obligatorio
+~%-25%El valor del atributo "dificultad" está mal especificado
+~%-25%El elemento "programa" no puede contener cero estiramientos
+=%100%El atributo "dificil" no está definido en la DTD
+}
+
+// Ejercicio 18
+::En el siguiente esquema XSD para un registro de equipamiento fitness, ¿qué opción define correctamente un grupo de atributos reutilizable?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- OPCIONES AQUÍ -->
+  
+  <xs:element name="equipamiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="maquina" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="grupoMuscular" type="xs:string"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="atributosEquipo"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:attributeList name="atributosEquipo"><xs:attribute name="id" type="xs:ID" use="required"/><xs:attribute name="estado" type="xs:string"/></xs:attributeList>`
+~%-25%`<xs:attributeSet id="atributosEquipo"><xs:attribute name="id" type="xs:ID" use="required"/><xs:attribute name="estado" type="xs:string"/></xs:attributeSet>`
+=%100%`<xs:attributeGroup name="atributosEquipo"><xs:attribute name="id" type="xs:ID" use="required"/><xs:attribute name="estado" type="xs:string"/></xs:attributeGroup>`
+~%-25%`<xs:attributes id="atributosEquipo"><xs:attribute name="id" type="xs:ID" use="required"/><xs:attribute name="estado" type="xs:string"/></xs:attributes>`
+}
+
+// Ejercicio 19
+::¿Qué error presenta el siguiente XML respecto a su DTD para un plan de suplementación?::
+```xml
+<!DOCTYPE planSuplementacion [
+<!ELEMENT planSuplementacion (suplemento+)>
+<!ELEMENT suplemento (nombre, dosis, frecuencia)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dosis (#PCDATA)>
+<!ELEMENT frecuencia (#PCDATA)>
+<!ATTLIST suplemento tipo (proteina|aminoacidos|creatina|vitaminas) #REQUIRED>
+]>
+<planSuplementacion>
+    <suplemento tipo="proteina">
+        <nombre>Whey Protein Isolate</nombre>
+        <dosis>30g</dosis>
+        <frecuencia>2 veces al día</frecuencia>
+        <momento>Post-entrenamiento</momento>
+    </suplemento>
+</planSuplementacion>
+```
+{
+~%-25%El valor del atributo "tipo" no es válido
+=%100%El elemento "momento" no está definido en la DTD
+~%-25%El elemento "dosis" tiene un formato incorrecto
+~%-25%El elemento "frecuencia" debería ser un atributo
+}
+
+// Ejercicio 20
+::En el siguiente esquema XSD para un diario de ejercicios, ¿qué opción implementa correctamente una restricción para que el elemento "intensidad" solo acepte valores entre 1 y 10?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ejercicio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="intensidad">
+          <!-- OPCIONES AQUÍ -->
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:simpleType><xs:restriction base="xs:integer"><xs:minValue value="1"/><xs:maxValue value="10"/></xs:restriction></xs:simpleType>`
+~%-25%`<xs:type min="1" max="10"/>`
+=%100%`<xs:simpleType><xs:restriction base="xs:integer"><xs:minInclusive value="1"/><xs:maxInclusive value="10"/></xs:restriction></xs:simpleType>`
+~%-25%`<xs:simpleType><xs:integer minInclusive="1" maxInclusive="10"/></xs:simpleType>`
+}
+
+// Ejercicio 21
+::¿Cuál es el error en la siguiente definición DTD para un calendario de clases fitness?::
+```xml
+<!DOCTYPE calendario [
+<!ELEMENT calendario (semana+)>
+<!ELEMENT semana (dia*)>
+<!ELEMENT dia (clase+)>
+<!ELEMENT clase (nombre, instructor, horario)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT instructor (#PCDATA)>
+<!ELEMENT horario (#PCDATA)>
+<!ATTLIST dia nombre (lunes|martes|miercoles|jueves|viernes|sabado|domingo) #REQUIRED>
+<!ATTLIST semana numero NMTOKEN #REQUIRED>
+<!ATTLIST clase duracion CDATA #FIXED "60min">
+]>
+```
+{
+~%-25%No se puede usar un atributo FIXED para "duracion"
+~%-25%El tipo NMTOKEN no es válido para el atributo "numero"
+=%100%No se permite que el elemento "dia" sea opcional dentro de "semana"
+~%-25%El atributo "nombre" para el elemento "dia" no puede tener valores enumerados
+}
+
+// Ejercicio 22
+::En el siguiente esquema XSD para un perfil de instructor de fitness, ¿qué opción define correctamente una lista de especialidades?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="instructor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="especialidades">
+          <!-- OPCIONES AQUÍ -->
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:list items="yoga pilates funcional hiit"/>`
+~%-25%`<xs:simpleType><xs:list><xs:restriction base="xs:string"/></xs:list></xs:simpleType>`
+=%100%`<xs:simpleType><xs:list itemType="xs:string"/></xs:simpleType>`
+~%-25%`<xs:array type="xs:string" minOccurs="1" maxOccurs="unbounded"/>`
+}
+
+// Ejercicio 23
+::¿Qué error presenta el siguiente XML respecto a su DTD para un seguimiento de entrenamiento?::
+```xml
+<!DOCTYPE seguimiento [
+<!ELEMENT seguimiento (entrenamiento+)>
+<!ELEMENT entrenamiento (fecha, duracion, ejercicios)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT ejercicios (ejercicio+)>
+<!ELEMENT ejercicio (nombre, series, repeticiones)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT series (#PCDATA)>
+<!ELEMENT repeticiones (#PCDATA)>
+]>
+<seguimiento>
+    <entrenamiento>
+        <fecha>2023-10-10</fecha>
+        <duracion>90min</duracion>
+        <ejercicios>
+            <ejercicio>
+                <nombre>Press de banca</nombre>
+                <series>4</series>
+            </ejercicio>
+        </ejercicios>
+    </entrenamiento>
+</seguimiento>
+```
+{
+~%-25%El elemento "entrenamiento" necesita un atributo obligatorio
+=%100%Falta el elemento "repeticiones" en el elemento "ejercicio"
+~%-25%El elemento "ejercicios" debe contener más de un ejercicio
+~%-25%La fecha está en un formato incorrecto
+}
+
+// Ejercicio 24
+::En el siguiente esquema XSD para un registro de máquinas de gimnasio, ¿qué declaración define correctamente un elemento "mantenimiento" que puede aparecer un número ilimitado de veces?::
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="maquina">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:string"/>
+        <xs:element name="nombre" type="xs:string"/>
+        <!-- OPCIONES AQUÍ para elemento mantenimiento -->
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+{
+~%-25%`<xs:element name="mantenimiento" type="xs:string" repeat="unlimited"/>`
+~%-25%`<xs:element name="mantenimiento" type="xs:string" times="*"/>`
+=%100%`<xs:element name="mantenimiento" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>`
+~%-25%`<xs:element name="mantenimiento" type="xs:string" maxOccurs="infinite"/>`
+}
+
+// Ejercicio 25
+::¿Qué declaración es correcta respecto a la validación de documentos XML?::
+{
+~%-25%Un documento XML con DTD interno no puede tener también un DTD externo
+~%-25%Un esquema XSD siempre valida mejor que una DTD
+=%100%XSD permite definir tipos de datos específicos mientras que DTD solo maneja texto
+~%-25%Un documento XML no puede validarse tanto con DTD como con XSD
+}

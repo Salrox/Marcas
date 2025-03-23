@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logs [
+    <!ELEMENT logs (log)*>
+    <!ATTLIST log categoria CDATA #REQUIRED>
+    <!ATTLIST log fecha CDATA #IMPLIED>
+    <!ATTLIST log id ID #REQUIRED>
+    <!ELEMENT log (descripcion,archivo*)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT archivo (#PCDATA)>
+    <!ATTLIST archivo ruta CDATA #REQUIRED>
+    <!ENTITY iden "Problemas de Identación">
+
+]>
+
+<logs>
+    <log categoria="Error" id="primero">
+        <descripcion> &iden; </descripcion>
+        <archivo ruta="C:\saulruiz\Escritorio\LM\Actividad1.xml">Actividad1.xml</archivo>
+    </log>
+
+        <log categoria="Warning" id="segundo" fecha="20/10/2024">
+        <descripcion>Uso de Mayusculas</descripcion>
+        <archivo ruta="C:\saulruiz\Escritorio\LM\Actividad1.xml/Prueba.xml">Prueba.xml</archivo>
+    </log>
+
+        <log categoria="Warning" id="tercero" >
+        <descripcion>Falta cierre de etiqueta el elemento "raza" </descripcion>
+        <archivo ruta="C:\saulruiz\Descargas\Actividad3.xml">Actividad3.xml</archivo>
+    </log>
+</logs>

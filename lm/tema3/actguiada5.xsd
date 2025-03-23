@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:chema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="paises">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" type="pais"></xs:element>
+                    <xs:complexType>
+                    <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"></xs:element>
+                    <xs:element name="ciudad" type="xs:minOccurs=0"></xs:element>
+                    <xs:element name="ciudad" type="xs:maxOccurs=5"></xs:element>
+                    </xs:sequence>
+                    </xs:complexType>
+            </xs:sequence>
+                <xs:element name="pais2" type="pais"></xs:element>
+                <xs:element name="pais3" type="pais"></xs:element>
+
+        </xs:complexType>
+    </xs:element>
+</xs:chema>

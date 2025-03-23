@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-areas:
+            "nav header"
+            "nav article"
+            "nav ads"
+            "nav footer"
+            ;
+            grid-template-columns:20% 1fr;
+            grid-template-rows: 1fr 40% 1fr 1fr;
+            grid-gap: 5px;
+            height: 100vh;
+        }
+
+        header,nav,article,aside,footer{
+            padding: 20px;
+            background-color:  #96cd32;
+            border: solid 1 black;
+        }
+
+        #nav{
+            grid-area: nav;
+        }
+
+        #header{
+            grid-area: header;
+        }
+
+        #article{
+            grid-area: article;
+        }
+
+        #ads{
+            grid-area: ads;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">Header</header>
+
+    <nav id="nav">Nav</nav>    
+    <article id="article">Article</article>
+    <aside id="ads">Ads</aside>
+    <footer id="footer">Footer
+        <p><a href="index.html">Volver</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Responsive</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 0px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: grey;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main {
+            grid-area: main;
+            padding: 2px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .uno, .dos, .tres {
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .uno { background-color: lightblue; }
+        .dos { background-color: lightgreen; }
+        .tres { background-color: lightcoral; }
+
+        footer {
+            grid-area: footer;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilos para diferentes tamaños de pantalla */
+
+        /* En pantallas grandes (3 columnas) */
+        @media (min-width: 1024px) {
+            main {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "uno dos tres";
+            }
+        }
+
+        /* En tablets (2 columnas) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                    "uno dos"
+                    "tres tres";
+            }
+        }
+
+        /* En móviles (1 columna) */
+        @media (max-width: 767px) {
+            main {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "uno"
+                    "dos"
+                    "tres";
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Página Web</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="uno">Sección 1: Contenido</section>
+        <section class="dos">Sección 2: Contenido</section>
+        <section class="tres">Sección 3: Contenido</section>
+    </main>
+
+    <footer>
+        &copy; 2025 - Página Web Responsive
+    </footer>
+
+</body>
+</html>

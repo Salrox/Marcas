@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=69, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        body{
+            height: 100%;
+            min-height: 100%;
+            margin: 0;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        }
+
+        header{
+            background-color: grey;
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100%;
+        grid-area: "header";
+        padding: 0;
+
+        }
+        .uno{
+            font-size: 20px;
+            background-color: yellow;
+            border: solid 2px black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            grid-area: "uno";
+        width: 100%;
+
+        }
+
+        .dos{
+            font-size: 20px;
+            background-color: yellowgreen;
+            border: solid 2px black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            grid-area: "dos";
+        width: 100%;
+
+        }
+    footer{
+        background-color: blue;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        font-size: 25px;
+        grid-area: "footer";
+
+
+    }
+        @media(min-width:1000px){
+            body{display: grid;
+                width: 100%;
+            }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "uno dos"
+        "footer"
+        ;
+        gap: 10px;
+        margin: 10px;
+
+        }
+
+        footer{
+            
+            align-self: end;
+            
+        }
+        
+        }
+
+        @media(max-width:1000px){
+            body{
+                display: grid;
+                height: 100%;
+                width: 100%;
+                grid-template-areas:
+                "header"
+                "main"
+                "footer";
+            }
+
+            main{
+                grid-template-columns: 1 fr;
+                grid-template-areas: 
+                "uno"
+                "dos";
+
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <section class="uno"><p>Section 1</p></section>
+        <section class="dos"><p>Section 2</p>
+            <img src="../../images/.png" height="500px" width="500px" alt="">
+        </section>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
