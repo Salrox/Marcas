@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    
+    header{
+        display: grid;
+        background-color: green;
+        position: sticky;
+        translate: 1 0;
+        text-align: center;
+        padding: 2vh;
+        font-size: 1.5em;
+        font-weight: bold;
+        grid-area:header;
+
+    }
+
+    nav{
+        background-color: antiquewhite;
+        display: grid;
+        grid-area: nav;
+        padding: 1.2vh;
+        width: 100%;
+        gap: 10vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-area: "primero segundo tercero cuarto";
+
+        
+    }
+
+    nav a{
+        text-decoration: none;
+        border: solid 2px black;
+        flex-direction: row;
+
+        
+
+
+        
+    }
+    .primero{
+        grid-area: primero;
+    }
+
+    .segundo{
+        grid-area: segundo;
+    }
+
+    .tercero{
+        grid-area: tercero;
+    }
+
+    .cuarto{
+        grid-area: cuarto;
+    }
+
+    body{
+        display: grid;
+        grid-template-rows: "1fr 1frr auto auto";
+        grid-template-columns: "auto 1fr 1fr auto";
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav" 
+        "main main main main"
+        "footer footer footer footer";
+        min-height: 100%;
+
+    }
+    main{
+        background-color: yellowgreen;
+        padding: 10px;
+        display: grid;
+        justify-content: space-around;
+        grid-area: main;
+        grid-template-columns:1fr 1fr;
+        gap: 20px;
+        grid-template-areas: "container1 container2";
+    }
+
+    .container1{
+        display: grid;
+        grid-area: container1;
+    }
+
+    .container2{
+        display: grid;
+        grid-area: container2;
+    }
+
+    h2{
+        text-align: center;
+        
+    }
+    footer{
+        grid-area: footer;
+        background-color: blue;
+        padding: 20px;
+        bottom: 0;
+    }
+</style>
+<body>
+    <header>Header</header>
+    <nav>
+        
+        <a href="#" id="primero">Primero</a>
+        <a href="#" id="segundo">Segundo</a>
+        <a href="#" id="tercero">Tercero</a>
+        <a href="#" id="cuarto">Cuarto</a>
+
+    </nav>
+    <main>
+        <div class="container1">
+        <section> <h2>Uno</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!orem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!orem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!orem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!orem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!orem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!orem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis neque accusantium, voluptatem libero sequi odit hic officia excepturi tempora, incidunt iste laudantium! Iusto in possimus atque nisi temporibus. Ut!</p></div>
+        </section>
+        <div class="container2">
+        <section><h2>Dos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magnconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae consectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores volurem ea obcaecati dolore nulla. Ad dolores voluconsectetur adipisicing elit. Recusandae tenetur ipsa sint hic quae eaque, nisi, velit dignissimos magni sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores volui sequi repudiandae rem ea obcaecati dolore nulla. Ad dolores voluptatem quisquam.</p></section></div>
+    </main>
+    <footer>
+        Footer
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi incidunt excepturi ut corporis dignissimos libero qui consequuntur quasi sint, delectus ducimus harum dicta repudiandae maiores culpa quam itaque voluptatum alias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic quis dolorum at. Mollitia rem sunt repudiandae omnis cumque nobis veniam maiores dignissimos fuga, nesciunt tempora, beatae vero eos pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat non officiis blanditiis, minus totam, atque omnis earum nobis ratione natus consequuntur vitae inventore nesciunt officia neque quae. Autem, laborum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quam perspiciatis, necessitatibus, qui maiores veritatis cum cumque aut facilis doloremque ratione odit blanditiis, quaerat fuga maxime quia eaque! Magnam, inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non atque culpa quam laborum excepturi, minima suscipit quo quos error reiciendis? Dolores minus et blanditiis cumque expedita? Voluptatem praesentium ipsa obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat harum reprehenderit eveniet modi! Facilis illo voluptate voluptatibus perferendis sit aspernatur deserunt ea consequatur, fugit tempora beatae enim autem adipisci ipsum!
+    </footer>
+</body>
+</html>
