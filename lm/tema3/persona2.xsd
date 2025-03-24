@@ -12,9 +12,36 @@
     </xs:complexType>
 </xs:element>
 
+
 <xs:attributeGroup name="personaAttr">
 <xs:attribute name="nombre" type="xs:string"> </xs:attribute>
                     <xs:attribute name="edad" type="xs:positiveInteger"> </xs:attribute>
                     <xs:attribute name="pais" type="xs:string"></xs:attribute>
 </xs:attributeGroup>
 </xs:schema>
+
+
+<!-- 
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:element name="personas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="persona" type="personas" maxOccurs="unbounded">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+<xs:complexType name="personas">
+<xs:attributeGroup ref="personAttr"/>
+</xs:complexType>
+
+
+<xs:attributeGroup name="personaAttr">
+<xs:attribute name="nombre" type="xs:string"> </xs:attribute>
+                    <xs:attribute name="edad" type="xs:positiveInteger"> </xs:attribute>
+                    <xs:attribute name="pais" type="xs:string"></xs:attribute>
+</xs:attributeGroup>
+</xs:schema>-->

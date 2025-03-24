@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Voy a añadir DTD para practicar -->
+<!DOCTYPE pedidos [
+    <!ELEMENT pedidos (pedido)>
+    <!ELEMENT pedido (destinatario,articulo,direccion,dia)>
+    <!ELEMENT direccion (calle,piso,letra)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT articulo (#PCDATA)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT piso (#PCDATA)>
+    <!ELEMENT letra (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+
+
+]>
+
+<pedidos>
+<pedido>
+<destinatario>Juan Delgado Martinez</destinatario>
+<articulo>Bicicleta A2023</articulo>
+<direccion>
+<calle>Barco 4</calle>
+<piso>Tercero</piso>
+<letra>A</letra>
+</direccion>
+<dia>19-5-2000</dia>
+</pedido>
+</pedidos>

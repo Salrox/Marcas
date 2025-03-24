@@ -1,0 +1,62 @@
+<!--deportistas.xml-->
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+<deportista deporte="Atletimo">
+<nombre>Jesse Owens</nombre>
+<deportista deporte="Natación">
+<nombre>Mark Spitz</nombre>
+</deportista>
+</deportistas>
+<!-- peliculas.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+<pelicula>
+<titulo>Con faldas y a lo loco</titulo>
+<director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+<director>Leo McCarey</director>
+<titulo>Sopa de ganso</titulo>
+</pelicula>
+<autor >barto</autor>
+</peliculas>
+<!-- texto.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<texto>
+<titulo>XML explicado a los niños</titulo>
+<parrafo>El <abreviatura>XML</abreviatura>define cómo crear lenguajes de marcas.
+</parrafo>
+<parrafo>Las marcas se añaden a un documento de texto para añadir información.</parrafo>
+<enlace> https://www.example.org</enlace>
+</texto>
+<!-- infgeografica.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia_mundial>
+<paises>
+<pais>España</pais>
+<continente>Europa</continente>
+<capital>Madrid</capital>
+</paises>
+</geografia_mundial >
+<!-- programas -->
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+<programa nombre="Firefox" licencia="GPL, MPL" />
+<programa nombre="LibreOffice" licencia="LGPL" />
+<programa nombre="Inkscape" licencia="GPL" />
+</programas>
+
+
+<!-- mundiales_futbol.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales_de_futbol>
+<mundial>
+<pais="España" año="1982"/>
+</mundial>
+</mundiales_de_futbol>
+<!-- medios_transporte -->
+<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+<bicicleta velocidad="v<100km/h" />
+<patinete velocidad maxima="50 km/h"/>
+</mediosDeTransporte>

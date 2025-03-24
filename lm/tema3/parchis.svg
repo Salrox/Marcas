@@ -23,7 +23,6 @@
 <rect x="370" y="240" width="65" height="40" fill="red" stroke="black"/>
 <rect x="370" y="280" width="65" height="50" fill="red" stroke="black"/>
 
-<polygon points="330,332 440,331 400,400" fill="red" stroke="black"/>
 
 <!--Verde-->
 <rect x="760" y="360" width="40" height="65" fill="white" stroke="black"/>
