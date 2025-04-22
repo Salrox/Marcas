@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+
+        <item>
+            <title>Actividad RSS</title>
+            <link>https://salrox.github.io/Marcas/lm/tema4/rss.xml</link>
+            <author>Saúl Ruiz Plaza</author>
+            <description>Actividad realizada en clase</description>
+        </item>
+
+        <item>
+            <title>Progeso de Sindicación de Contenido</title>
+            <link>https://salrox.github.io/Marcas/lm/tema4/index.html</link>
+            <author>Saúl Ruiz Plaza</author>
+            <description>En lenguaje de Marcas se está inpartiendo RSS</description>
+        </item>
+
+        <item>
+            <title>Otra cosa </title>
+            <link>http://192.168.114.95/dashboard/lm/tema4/index.html</link>
+            <author>Saúl Ruiz Plaza</author>
+            <description>En lenguaje de Marcas se está inpartiendo RSS</description>
+        </item>
+    </channel>
+</rss>
